@@ -1,0 +1,16 @@
+{
+  "name": "Gcount",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "popularity of articles",
+  "icons": {
+    "48" : "gcount-48.png",
+    "128" : "gcount-128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://techindepth.herokuapp.com/*"],
+      "js" : ["jquery-1.8.2.min.js", "underscore-min.js", "contentscript.js"]
+    }
+  ]
+}
